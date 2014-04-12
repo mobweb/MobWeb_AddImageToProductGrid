@@ -4,7 +4,7 @@ class MobWeb_AddImageToProductGrid_Block_Adminhtml_Template_Grid_Renderer_Image 
     public function render(Varien_Object $row)
     {
         $img = $row->getData($this->getColumn()->getIndex());
-        if(strpos($img, 'no_selection') !== 0) {
+        if($img && strpos($img, 'no_selection') !== 0) {
             return sprintf('<img src="%s" width="60px" />', Mage::getBaseUrl('media') . 'catalog/product' . $img);
         }
 
