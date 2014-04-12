@@ -1,0 +1,6 @@
+app/code/local/MobWeb/AddImageToProductGrid app/code/local/MobWeb/AddImageToProductGrid/
+
+app/etc/modules/MobWeb_AddImageToProductGrid.xml app/etc/modules/MobWeb_AddImageToProductGrid.xml
+
+# Clear the cache
+@shell   rm -rf $PROJECT/var/cache/* && echo "Magento Cache cleared"
