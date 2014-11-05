@@ -5,7 +5,7 @@ class MobWeb_AddImageToProductGrid_Block_Catalog_Product_Edit_Tab_Related extend
     {
         $storeId = (int) $this->getRequest()->getParam('store', 0);
         $store = Mage::app()->getStore($storeId);
-        
+
         if ($store->getId() && !isset($this->_joinAttributes['image'])) {
             $collection->joinAttribute(
                 'image',
@@ -25,13 +25,13 @@ class MobWeb_AddImageToProductGrid_Block_Catalog_Product_Edit_Tab_Related extend
     
     protected function _prepareColumns()
     {
-        $this->addColumn('image', array(
+        $this->addColumnAfter('image', array(
             'header' => Mage::helper('catalog')->__('Image'),
             'align' => 'left',
             'index' => 'image',
             'width'     => '70',
             'renderer' => 'MobWeb_AddImageToProductGrid_Block_Adminhtml_Template_Grid_Renderer_Image'
-        ));
+        ), 'entity_id');
 
         return parent::_prepareColumns();
     }

@@ -24,13 +24,13 @@ class MobWeb_AddImageToProductGrid_Block_Adminhtml_Catalog_Product_Grid extends 
     
     protected function _prepareColumns()
     {
-        $this->addColumn('image', array(
+        $this->addColumnAfter('image', array(
             'header' => Mage::helper('catalog')->__('Image'),
             'align' => 'left',
             'index' => 'image',
             'width'     => '70',
             'renderer' => 'MobWeb_AddImageToProductGrid_Block_Adminhtml_Template_Grid_Renderer_Image'
-        ));
+        ), 'entity_id');
 
         return parent::_prepareColumns();
     }
