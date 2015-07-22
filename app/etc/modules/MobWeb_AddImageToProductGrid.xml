@@ -3,7 +3,7 @@
     <modules>
         <MobWeb_AddImageToProductGrid>
             <active>true</active>
-            <codePool>local</codePool>
+            <codePool>community</codePool>
             <depends>
                 <Mage_Customer />
                 <Mage_Adminhtml />

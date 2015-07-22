@@ -1,4 +1,4 @@
-app/code/local/MobWeb/AddImageToProductGrid app/code/local/MobWeb/AddImageToProductGrid/
+app/code/community/MobWeb/AddImageToProductGrid app/code/community/MobWeb/AddImageToProductGrid/
 
 app/etc/modules/MobWeb_AddImageToProductGrid.xml app/etc/modules/MobWeb_AddImageToProductGrid.xml
 
